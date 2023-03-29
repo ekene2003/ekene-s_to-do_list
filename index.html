@@ -8,8 +8,11 @@
           <title>To-do list</title>
           <link rel="stylesheet" href="./style.css">
           <link rel="stylesheet" href="./all.min.css">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bangers&family=Cinzel:wght@400;600&family=Edu+TAS+Beginner&family=Edu+VIC+WA+NT+Beginner&family=Exo:wght@300&family=Genos:ital,wght@0,400;1,100&family=IBM+Plex+Serif:wght@300&family=Lobster&family=Monoton&family=Nanum+Gothic&family=Press+Start+2P&family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto+Slab:wght@100;300&family=Silkscreen&display=swap"
+               rel="stylesheet">
      </head>
-
      <body>
           <header class="top-header">
                <div class="brand-logo">
@@ -18,42 +21,24 @@
                </div>
           </header>
           <main class="list-body">
-               <form action="" class="list-form">
-                    <input type="text" placeholder="Add Item">
-                    <button class="input-btn"><i class="fa fa-plus"></i></button>
-               </form>
                <section class="to-do">
+                    <form action="" class="list-form">
+                         <input type="text" placeholder="Add Item" class="input">
+                         <button class="input-btn">
+                              <div class="plus"><i class="fa fa-plus"></i></div>
+                         </button>
+                         </form>
                     <h3 class="to-do-head">TO DO</h3>
                     <div class="todo-list">
-                         <div class="todo-items">
-                              <div class="check"></div>
-                              <div class="task"></div>
-                              <div class="delete"><button><i class="fa fa-remove"></i></button></div>
-                         </div>
-                         <div class="todo-items">
-                              <div class="check"></div>
-                              <div class="task"></div>
-                              <div class="delete"><button><i class="fa fa-remove"></i></button></div>
-                         </div>
-                         <div class="todo-items">
-                              <div class="check"></div>
-                              <div class="task"></div>
-                              <div class="delete"><button><i class="fa fa-remove"></i></button></div>
-                         </div>
-                         <div class="todo-items">
-                              <div class="check"></div>
-                              <div class="task"></div>
-                              <div class="delete"><button><i class="fa fa-remove"></i></button></div>
-                         </div>
-                         <div class="todo-items">
-                              <div class="check"></div>
-                              <div class="task"></div>
-                              <div class="delete"><button><i class="fa fa-remove"></i></button></div>
-                         </div>
+                    </div>
+                    <h2 class="complete">Completed</h2>
+                    <div class="todo-items">
+                         <h3 class="done">Clean the house</h3>
                     </div>
                </section>
           </main>
-          <source src="./all.min.js" type="">
+     <script src="./all.min.js"></script>
+     <script src="./sricpt.js"></script>
      </body>
 
 </html>

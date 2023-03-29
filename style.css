@@ -1,0 +1,119 @@
+*{
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+     outline: 0;
+     /* border: none; */
+}
+body{
+     background:rgb(63, 63, 247);
+
+}
+.top-header{
+     padding: .5rem 1rem;
+     background:rgb(63, 63, 247);
+}
+.brand-logo{
+     display: flex;
+align-items: center;
+
+}
+.brand-img{
+width: 4rem;
+height: 4rem;
+border-radius: 50%;
+margin-right: 1rem;
+}
+.brand-tittle{
+font-family: 'Roboto Flex', sans-serif;
+color: white;
+}
+.list-body{
+     height: fit-content;
+}
+.list-form{
+display: flex;
+position: relative;
+width: 33rem;
+}
+input.input{
+     border-radius: 3rem;
+     padding: .5rem;
+     width: 33rem;
+     height: 4rem;
+     background:white ;
+      border: 1px solid black;
+     color: black;
+     font-size: 1rem;
+font-family: 'Roboto Flex', sans-serif;
+}
+.input-btn{
+      padding: .4rem;
+      border-radius: 50%;
+      position: absolute;
+      right: 2%;
+     top: 15%;
+      height: 2.7rem;
+      width:2.5rem;
+      background: blue;
+      color: white;
+      border: 1px solid black;
+      cursor: pointer;
+}
+.to-do{
+background:white;
+width: 50%;
+display: block;
+margin: 0 auto;
+border-radius:.5rem;
+padding: 1.5rem 2rem;
+}
+.to-do-head{
+margin: 1rem 0;
+font-family: 'Roboto Flex', sans-serif;
+color: blue;
+}
+.todo-list{
+
+}
+.complete{
+     margin-bottom: 1rem;
+font-family: 'Roboto Flex', sans-serif;
+color: blue;
+
+}
+.done{
+text-decoration: line-through;
+}
+.todo-items{
+display: flex;
+background: rgba(0, 0, 0, 0.069);
+gap: 3rem;
+padding: 2rem;
+margin-bottom: 1rem;
+justify-content: space-between;
+font-family: 'Amatic SC', cursive;
+
+}
+.check{
+cursor: pointer;
+border-radius: 50%;
+height: 1.5rem;
+width: 1.5rem;   
+border: 2px solid black;
+}
+.thick{
+margin-left: .3rem;
+}
+.task{
+font-size: 1.8rem;
+}
+.delete{
+color: red;
+cursor: pointer;
+}
+svg.fa-plus{
+     /* color: red !important; */
+     height: 1.2rem;
+
+}
