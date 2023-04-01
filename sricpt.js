@@ -7,9 +7,9 @@ function multiElem(element) {
 
 let input = singleElem(".input");
 let addBtn = singleElem(".input-btn");
-let checkBox = singleElem(".check");
 let task = singleElem(".task");
 let list = singleElem(".todo-list");
+let done = singleElem(".marked");
 addBtn.onclick = (e) => {
   e.preventDefault();
   let userTask = input.value;
@@ -30,4 +30,20 @@ addBtn.onclick = (e) => {
       closeList.style.display = "none";
     };
   });
+  let checkBox = multiElem(".check");
+  let thick = multiElem(".thick");
+  checkBox.forEach((check) => {
+    check.onclick = () => {
+      let todo = check.closest(".todo-items");
+      check.innerHTML = `<i class = "fa fa-check"></i>`;
+      setTimeout(() => {
+        todo.style.display = "none";
+      }, 1000);
+      let choosen = check.closest(".todo-items").querySelector(".task");
+      done.innerHTML += ` 
+                         <h3 class="done">${choosen.innerText}</h3>
+        `;
+    };
+  });
 };
+

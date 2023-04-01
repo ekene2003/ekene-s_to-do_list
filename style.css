@@ -93,7 +93,15 @@ padding: 2rem;
 margin-bottom: 1rem;
 justify-content: space-between;
 font-family: 'Amatic SC', cursive;
-
+}
+.done{
+display: flex;
+background: rgba(0, 0, 0, 0.069);
+gap: 3rem;
+padding: 2rem;
+margin-bottom: 1rem;
+justify-content: space-between;
+font-family: 'Amatic SC', cursive;
 }
 .check{
 cursor: pointer;
@@ -101,9 +109,11 @@ border-radius: 50%;
 height: 1.5rem;
 width: 1.5rem;   
 border: 2px solid black;
+margin-left: .3rem; 
+
 }
-.thick{
-margin-left: .3rem;
+svg.fa-check{
+     margin-left: .2rem;
 }
 .task{
 font-size: 1.8rem;
